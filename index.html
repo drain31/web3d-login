@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+
+    <style>
+      /* Pastikan html dan body merentang ke seluruh layar */
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Pastikan full screen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-image: url('/background.png'); /* Gunakan gambar latar belakang */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        width: 400px; /* Lebih lebar agar tidak terlalu sempit */
+        min-height: 320px; /* Biarkan tinggi menyesuaikan */
+        background: rgba(26, 26, 26, 0.85);
+        border-radius: 12px;
+        color: white;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+        backdrop-filter: blur(6px); /* Efek blur untuk tampilan lebih modern */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div> <!-- Hapus bagian konten lain -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
