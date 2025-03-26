@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const users = {
-  rahmadani: { password: "nisyaputri03", image: "/simulator.png", saldo: 875 },
+  rahmadani: { password: "nisyaputri03", image: "simulator.png", saldo: 875 },
 };
 
 export default function Web3DLogin() {
@@ -52,7 +52,7 @@ export default function Web3DLogin() {
     setTimeout(() => {
       if (currentDate < resumedDate) {
         setPending(true);
-        setPendingMessage("Penarikan sedang pending, transaksi akan cair mulai 6 April 2025.");
+        setPendingMessage("Penarikan sedang pending, transaksi akan mulai dicairkan kembali 6 April 2025.");
         setResumedMessage("");
       } else if (withdrawAmount && Number(withdrawAmount) <= saldo) {
         setSaldo(saldo - Number(withdrawAmount));
